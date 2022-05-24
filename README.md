@@ -1,3 +1,3 @@
 # SimpleWeatherGUI
-A simple weather GUI app using *PySimpleGUI*
-the data using gathered using the API from *openweathermap.org/api*
+A simple weather GUI app using *PySimpleGUI*.
+The data used is gathered through using the API from openweathermap.org/api
