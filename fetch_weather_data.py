@@ -35,7 +35,7 @@ class CheckWeather():
     def showStats(self):
         return self.current['temp'], self.current['humidity'], self.current['feels_like']
 
-
+#testing the api fetch
 #test = CheckWeather(city_name='Tokyo')
 # test.makeUrl()
 # test.callAPI()
