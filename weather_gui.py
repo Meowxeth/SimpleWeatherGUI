@@ -7,7 +7,7 @@ layout = [
     [sg.Text(size=(50, 5), key='weather_status')],
     [sg.Text("Type in the location"), sg.Input(key='UserInput')],
     [sg.Text(size=(50, 1), key='-OUTPUT-')],
-    [sg.Button('Search'), sg.Button('Quit')]
+    [sg.Button('Search'), sg.Button('Exit')]
 ]
 
 window = sg.Window('Weather Report', layout)
