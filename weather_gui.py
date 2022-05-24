@@ -12,7 +12,7 @@ layout = [
 
 window = sg.Window('Weather Report', layout)
 
-
+#main GUI application loop
 while True:
     event, values = window.read()
     if event in [sg.WIN_CLOSED, 'Exit']:
