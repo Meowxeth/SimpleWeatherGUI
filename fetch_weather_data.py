@@ -2,8 +2,8 @@ import requests
 
 # THIS IS MY OWN API KEY FROM https://openweathermap.org/api
 # PLEASE GET YOUR OWN API KEY IF YOU WANT TO HAVE YOUR OWN VERSION OF THE CODE.
-# - Ippei
-API_KEY = 'a1d9885414880b67aa51b7509784ddc2'
+# - Meowxeth
+API_KEY = '470f5887ee02c12b919652970ee3896e'
 
 
 class CheckWeather():
