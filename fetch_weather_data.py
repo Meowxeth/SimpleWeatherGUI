@@ -16,18 +16,16 @@ class CheckWeather():
 
     def makeUrl(self):
         self.url = (
-            f'http://api.openweathermap.org/data/2.5/weather?q={self.city_name}'
-            '&units=metric&appid={API_KEY}')
+            f'https://api.openweathermap.org/data/2.5/weather?q={self.city_name}&appid={api_key}&units=metric')
 
     def callAPI(self):
         # Makes an API call, and puts response in a json file
         r = requests.get(self.url)
         response_dict = r.json()
         if response_dict['cod'] == '404':
-            print("City not found.")
             return False
         else:
-            print(response_dict)
+            #print(response_dict)
             self.current = response_dict['main']
             self.main = response_dict['weather']
             return True
@@ -39,4 +37,4 @@ class CheckWeather():
 #test = CheckWeather(city_name='Tokyo')
 # test.makeUrl()
 # test.callAPI()
-# test.define()
+# print(test.showStats())
