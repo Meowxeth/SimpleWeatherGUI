@@ -16,7 +16,7 @@ class CheckWeather():
 
     def makeUrl(self):
         self.url = (
-            f'https://api.openweathermap.org/data/2.5/weather?q={self.city_name}&appid={api_key}&units=metric')
+            f'https://api.openweathermap.org/data/2.5/weather?q={self.city_name}&appid={API_KEY}&units=metric')
 
     def callAPI(self):
         # Makes an API call, and puts response in a json file
