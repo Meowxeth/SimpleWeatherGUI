@@ -3,7 +3,7 @@ import requests
 # GET YOUR OWN API KEY FROM https://openweathermap.org/api
 # PLEASE GET YOUR OWN API KEY IF YOU WANT TO HAVE YOUR OWN VERSION OF THE CODE.
 # - Meowxeth
-API_KEY = 'YOUR API KEY'
+API_KEY = ' '
 
 
 class CheckWeather():
@@ -22,19 +22,19 @@ class CheckWeather():
         # Makes an API call, and puts response in a json file
         r = requests.get(self.url)
         response_dict = r.json()
+        print(response_dict)
         if response_dict['cod'] == '404':
             return False
-        else:
-            #print(response_dict)
-            self.current = response_dict['main']
-            self.main = response_dict['weather']
-            return True
+        # print(response_dict)
+        self.current = response_dict['main']
+        self.main = response_dict['weather']
+        return True
 
     def showStats(self):
         return self.current['temp'], self.current['humidity'], self.current['feels_like']
 
-#testing the api fetch
-#test = CheckWeather(city_name='Tokyo')
+# testing the api fetch
+# test = CheckWeather(city_name='Tokyo')
 # test.makeUrl()
 # test.callAPI()
 # print(test.showStats())
