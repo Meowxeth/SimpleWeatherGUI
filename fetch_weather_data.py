@@ -3,7 +3,7 @@ import requests
 # GET YOUR OWN API KEY FROM https://openweathermap.org/api
 # PLEASE GET YOUR OWN API KEY IF YOU WANT TO HAVE YOUR OWN VERSION OF THE CODE.
 # - Meowxeth
-API_KEY = '2b6b297721dcd10079717783db46ea0e'
+API_KEY = 
 
 
 class CheckWeather():
